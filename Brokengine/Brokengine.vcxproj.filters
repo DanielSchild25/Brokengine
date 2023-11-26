@@ -4,6 +4,12 @@
     <Filter Include="Brokengine">
       <UniqueIdentifier>{A9258EB0-95DD-CFFD-FEE4-A859EABB6AEE}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Brokengine\Core">
+      <UniqueIdentifier>{A13BDE15-0DC7-4BDA-16D8-CECE82E2A7DA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Brokengine\Events">
+      <UniqueIdentifier>{6DB97D0B-D9CF-7BA1-2247-07C38E9C4C29}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Brokengine.h" />
@@ -13,8 +19,26 @@
     <ClInclude Include="src\Brokengine\Core.h">
       <Filter>Brokengine</Filter>
     </ClInclude>
+    <ClInclude Include="src\Brokengine\Core\KeyCodes.h">
+      <Filter>Brokengine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brokengine\Core\MouseCodes.h">
+      <Filter>Brokengine\Core</Filter>
+    </ClInclude>
     <ClInclude Include="src\Brokengine\EntryPoint.h">
       <Filter>Brokengine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brokengine\Events\ApplicationEvent.h">
+      <Filter>Brokengine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brokengine\Events\Event.h">
+      <Filter>Brokengine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brokengine\Events\KeyEvent.h">
+      <Filter>Brokengine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brokengine\Events\MouseEvent.h">
+      <Filter>Brokengine\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Brokengine\Log.h">
       <Filter>Brokengine</Filter>
