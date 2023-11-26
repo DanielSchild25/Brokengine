@@ -1,6 +1,6 @@
 #include "Application.h"
 
-namespace Hazel
+namespace Brokengine
 {
 	Application::Application()
 	{

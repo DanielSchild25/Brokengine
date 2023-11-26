@@ -1,4 +1,4 @@
-workspace "Hazel"
+workspace "Brokengine"
 	architecture "x64"
 
 	configurations
@@ -10,8 +10,8 @@ workspace "Hazel"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
-project "Hazel"
-	location "Hazel"
+project "Brokengine"
+	location "Brokengine"
 	kind "SharedLib"
 	language "C++"
 
@@ -36,8 +36,8 @@ project "Hazel"
 
 		defines
 		{
-			"HZ_PLATFORM_WINDOWS",
-			"HZ_BUILD_DLL"
+			"BE_PLATFORM_WINDOWS",
+			"BE_BUILD_DLL"
 		}
 
 		postbuildcommands
@@ -46,15 +46,15 @@ project "Hazel"
 		}
 
 	filter "configurations:Debug"
-		defines "HZ_DEBUG"
+		defines "BE_DEBUG"
 		symbols "On"
 
 	filter "configurations:Release"
-		defines "HZ_RELEASE"
+		defines "BE_RELEASE"
 		optimize "On"
 
 	filter "configurations:Dist"
-		defines "HZ_DIST"
+		defines "BE_DIST"
 		optimize "On"
 	
 project "Sandbox"
@@ -73,13 +73,13 @@ project "Sandbox"
 
 	includedirs
 	{
-		"Hazel/vendor/spdlog/include",
-		"Hazel/src"
+		"Brokengine/vendor/spdlog/include",
+		"Brokengine/src"
 	}
 
 	links
 	{
-		"Hazel"
+		"Brokengine"
 	}
 
 	filter "system:windows"
@@ -89,17 +89,17 @@ project "Sandbox"
 
 		defines
 		{
-			"HZ_PLATFORM_WINDOWS"
+			"BE_PLATFORM_WINDOWS"
 		}
 
 	filter "configurations:Debug"
-		defines "HZ_DEBUG"
+		defines "BE_DEBUG"
 		symbols "On"
 
 	filter "configurations:Release"
-		defines "HZ_RELEASE"
+		defines "BE_RELEASE"
 		optimize "On"
 
 	filter "configurations:Dist"
-		defines "HZ_DIST"
+		defines "BE_DIST"
 		optimize "On"

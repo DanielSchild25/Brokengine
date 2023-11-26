@@ -2,9 +2,9 @@
 
 #include "Core.h"
 
-namespace Hazel
+namespace Brokengine
 {
-	class HAZEL_API Application
+	class Brokengine_API Application
 	{
 	public:
 		Application();

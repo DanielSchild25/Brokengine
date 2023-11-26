@@ -1,6 +1,6 @@
-#include <Hazel.h>
+#include <Brokengine.h>
 
-class Sandbox : public Hazel::Application
+class Sandbox : public Brokengine::Application
 {
 public:
 	Sandbox()
@@ -14,7 +14,7 @@ public:
 };
 
 
-Hazel::Application* Hazel::CreateApplication()
+Brokengine::Application* Brokengine::CreateApplication()
 {
 	return new Sandbox();
 }

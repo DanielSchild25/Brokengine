@@ -2,9 +2,9 @@
 
 //For use by Hazel Applications
 
-#include "Hazel/Application.h"
-#include "Hazel/Log.h"
+#include "Brokengine/Application.h"
+#include "Brokengine/Log.h"
 
 //----Entry Point-----------------
-#include "Hazel/EntryPoint.h"
+#include "Brokengine/EntryPoint.h"
 //--------------------------------
