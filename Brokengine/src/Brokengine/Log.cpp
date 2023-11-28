@@ -1,3 +1,4 @@
+#include "bepch.h"
 #include "Log.h"
 
 namespace Brokengine

@@ -2,8 +2,6 @@
 
 #include "Brokengine/Events/Event.h"
 
-#include <sstream>
-
 namespace Brokengine {
 
 	class WindowResizeEvent : public Event

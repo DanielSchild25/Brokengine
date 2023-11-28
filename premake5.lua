@@ -10,6 +10,13 @@ workspace "Brokengine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+--Include directories relative to root folder (solutiond directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Brokengine/vendor/GLFW/include"
+
+include "Brokengine/vendor/GLFW"
+
+
 project "Brokengine"
 	location "Brokengine"
 	kind "SharedLib"
@@ -17,6 +24,9 @@ project "Brokengine"
 
 	targetdir ("bin/" ..outputdir.. "/%{prj.name}")
 	objdir ("bin-int/" ..outputdir.. "/%{prj.name}")
+
+	pchheader "bepch.h"
+	pchsource "Brokengine/src/bepch.cpp"
 
 	files
 	{
@@ -27,7 +37,14 @@ project "Brokengine"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

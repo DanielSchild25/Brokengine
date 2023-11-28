@@ -1,9 +1,7 @@
 #pragma once
-
+#include "bepch.h"
 #include "Brokengine/Core.h"
 
-#include <string>
-#include <functional>
 
 namespace Brokengine {
 

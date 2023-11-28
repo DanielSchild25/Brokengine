@@ -10,6 +10,12 @@
     <Filter Include="Brokengine\Events">
       <UniqueIdentifier>{6DB97D0B-D9CF-7BA1-2247-07C38E9C4C29}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Brokengine.h" />
@@ -43,6 +49,13 @@
     <ClInclude Include="src\Brokengine\Log.h">
       <Filter>Brokengine</Filter>
     </ClInclude>
+    <ClInclude Include="src\Brokengine\Window.h">
+      <Filter>Brokengine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bepch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Brokengine\Application.cpp">
@@ -51,5 +64,9 @@
     <ClCompile Include="src\Brokengine\Log.cpp">
       <Filter>Brokengine</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bepch.cpp" />
   </ItemGroup>
 </Project>
