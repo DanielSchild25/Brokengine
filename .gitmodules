@@ -1,5 +1,5 @@
-[submodule "Hazel/vendor/spdlog"]
-	path = Hazel/vendor/spdlog
+[submodule "Brokengine/vendor/spdlog"]
+	path = Brokengine/vendor/spdlog
 	url = https://github.com/gabime/spdlog
 [submodule "Brokengine/vendor/GLFW"]
 	path = Brokengine/vendor/GLFW
